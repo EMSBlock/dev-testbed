@@ -3,7 +3,11 @@ require("@nomicfoundation/hardhat-toolbox");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.18",
-  network: "localhost",
+  networks: {
+    localhost: {
+      url: "http://127.0.0.1:8545"
+    }
+  }
 };
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {

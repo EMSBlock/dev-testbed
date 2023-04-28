@@ -24,6 +24,12 @@ kill %1
 
 
 ```
-npx hardhat run scripts/deploy.js
-npx hardhat run scripts/Withdraw.js
+npx hardhat run --network localhost scripts/deploy.js
+npx hardhat run --network localhost scripts/Withdraw.js
+```
+
+
+Wipe all previous data from network (Doesnt change private keys)
+```
+npx hardhat clean
 ```
