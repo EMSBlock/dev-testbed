@@ -4,7 +4,7 @@ async function main () {
     const accounts = await ethers.provider.listAccounts();
     console.log(accounts);
     // Set up an ethers contract, representing our deployed Box instance
-    const address = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+    const address = "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1";
     const Lock = await ethers.getContractFactory('Lock');
     const lock = await Lock.attach(address);
     await lock.withdraw();

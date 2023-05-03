@@ -5,6 +5,7 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
+const path = require("path");
 
 async function main() {
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
@@ -21,6 +22,30 @@ async function main() {
     `Lock with ${ethers.utils.formatEther(
       lockedAmount
     )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+  );
+
+  save_artifacts(lock);
+}
+
+function save_artifacts(lock) {
+  const fs = require("fs");
+  
+  const contractsDir = path.join(__dirname, "..", "..", "web", "app-lock", "src", "contract-artifacts");
+
+  if (!fs.existsSync(contractsDir)) {
+    fs.mkdirSync(contractsDir);
+  }
+
+  fs.writeFileSync(
+    path.join(contractsDir, "contract-address.json"),
+    JSON.stringify({ contract_address: lock.address }, undefined, 2)
+  );
+
+  const lock_artifact = artifacts.readArtifactSync("Lock");
+
+  fs.writeFileSync(
+    path.join(contractsDir, "contract-data.json"),
+    JSON.stringify(lock_artifact, null, 2)
   );
 }
 
