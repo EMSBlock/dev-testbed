@@ -4,6 +4,6 @@
 [submodule "apps/app-example-boilerplate"]
 	path = apps/app-example-boilerplate
 	url = https://github.com/EMSBlock/app-example-boilerplate
-[submodule "app-dev-a"]
-	path = app-dev-a
+[submodule "apps/app-dev-a"]
+	path = apps/app-dev-a
 	url = https://github.com/EMSBlock/app-dev-a
