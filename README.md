@@ -1,16 +1,9 @@
 # Testbed - using Hardhat
 
 ```
-cd testbed
-```
-
-```
 npm install
 ```
-
-```
-cd hardhat
-```
+Navigate into chosen app
 
 ```
 npx hardhat node
@@ -25,7 +18,7 @@ kill %1
 
 ```
 npx hardhat run --network localhost scripts/deploy.js
-npx hardhat run --network localhost scripts/Withdraw.js
+npx hardhat run --network localhost scripts/withdraw.js
 ```
 
 
