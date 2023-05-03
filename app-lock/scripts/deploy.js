@@ -30,7 +30,7 @@ async function main() {
 function save_artifacts(lock) {
   const fs = require("fs");
   
-  const contractsDir = path.join(__dirname, "..", "..", "web", "app-lock", "src", "contract-artifacts");
+  const contractsDir = path.join(__dirname, "..", "web", "src", "contract-artifacts");
 
   if (!fs.existsSync(contractsDir)) {
     fs.mkdirSync(contractsDir);
