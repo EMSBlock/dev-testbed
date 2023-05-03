@@ -13,6 +13,13 @@ Navigate into apps directory.
 git submodule add URL_OF_APP
 ```
 
+## Update Apps
+
+Navigate to dev-testbed home
+```bash
+git submodule update
+```
+
 ## Default keys for hardhat testbed
 
 WARNING: These accounts, and their private keys, are publicly known.  
