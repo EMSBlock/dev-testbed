@@ -6,6 +6,13 @@
 - [Run hardhat node](instructions/run_node.md)
 - [Run web app front end](instructions/run_web_app.md)
 
+## Add an app
+
+Navigate into apps directory.  
+```bash
+git submodule add URL_OF_APP
+```
+
 ## Default keys for hardhat testbed
 
 WARNING: These accounts, and their private keys, are publicly known.  
