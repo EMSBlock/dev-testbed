@@ -5,6 +5,7 @@
 - [Install prerequisites](instructions/install_req.md)
 - [Run hardhat node](instructions/run_node.md)
 - [Run web app front end](instructions/run_web_app.md)
+- [How the directory tree structure should look](instructions/dir_structure.md)
 
 ## Add an app
 
