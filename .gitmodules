@@ -1,9 +1,0 @@
-[submodule "apps/app-example-lock"]
-	path = apps/app-example-lock
-	url = https://github.com/EMSBlock/app-example-lock
-[submodule "apps/app-example-boilerplate"]
-	path = apps/app-example-boilerplate
-	url = https://github.com/EMSBlock/app-example-boilerplate
-[submodule "apps/app-dev-a"]
-	path = apps/app-dev-a
-	url = https://github.com/EMSBlock/app-dev-a
