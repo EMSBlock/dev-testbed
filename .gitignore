@@ -2,6 +2,7 @@ node_modules
 *.lock
 *-lock.json
 
+# Keep apps folder that is empty
 apps/*
 !.gitkeep
 
