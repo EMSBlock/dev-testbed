@@ -9,16 +9,9 @@
 
 ## Add an app
 
-Navigate into apps directory.  
 ```bash
-git submodule add URL_OF_APP
-```
-
-## Update Apps
-
-Navigate to dev-testbed home
-```bash
-git submodule update
+cd apps
+git clone URL_OF_APP
 ```
 
 ## Default keys for hardhat testbed
